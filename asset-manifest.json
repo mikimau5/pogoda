@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pogoda/static/css/main.5d3292b0.chunk.css",
+    "main.js": "/pogoda/static/js/main.48a404fe.chunk.js",
+    "main.js.map": "/pogoda/static/js/main.48a404fe.chunk.js.map",
+    "runtime~main.js": "/pogoda/static/js/runtime~main.a579aba6.js",
+    "runtime~main.js.map": "/pogoda/static/js/runtime~main.a579aba6.js.map",
+    "static/js/2.65aa1cca.chunk.js": "/pogoda/static/js/2.65aa1cca.chunk.js",
+    "static/js/2.65aa1cca.chunk.js.map": "/pogoda/static/js/2.65aa1cca.chunk.js.map",
+    "index.html": "/pogoda/index.html",
+    "precache-manifest.1e2c783f258bc0cdf3bb6520cdd51cb6.js": "/pogoda/precache-manifest.1e2c783f258bc0cdf3bb6520cdd51cb6.js",
+    "service-worker.js": "/pogoda/service-worker.js",
+    "static/css/main.5d3292b0.chunk.css.map": "/pogoda/static/css/main.5d3292b0.chunk.css.map"
+  }
+}
