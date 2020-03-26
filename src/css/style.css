@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* body {
+  font-family: arial;
+  background-color: #609bbf;
+}
+
+.App form input,
+.App form button {
+  margin: 20px 10px 50px;
+  padding: 10px 20px;
+  border: 2px solid #222559;
+  border-radius: 25px;
+  background-color: #6cd9d9;
+  font-size: 20px;
+}
+
+.App form button {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.App form button:hover {
+  background-color: #222559;
+  color: white;
+}
+
+.App form div label {
+  font-size: 20px;
+}
+
+.App .result .mobileResult {
+  display: none;
+}
+
+.App .result h3 {
+  margin: 30px 0 30px 50px;
+  font-weight: normal;
+  font-size: 26px;
+}
+
+.App .result em {
+  font-weight: bold;
+}
+
+.App .result .icon {
+  text-align: center;
+  border: 2px solid #222559;
+  border-radius: 25px;
+  margin: 10px;
+}
+
+.App .result .forecast {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.App .result .forecast div {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px 10px;
+  padding: 10px;
+  border: 2px solid #222559;
+  border-radius: 25px;
+  background-color: #6cd9d9;
+}
+
+.App .result h4 {
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.App .result i {
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  color: #222559;
+}
+
+.App .result p {
+  display: inline-block;
+}
+
+.App .result strong {
+  color: #222559;
+  margin-left: 5px;
+}
+
+@media (max-width: 320px) {
+  .result h4 {
+    margin: 10px 0;
+  }
+  .result h4 strong {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App .result p {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .App form {
+    text-align: center;
+  }
+  .App form input {
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .App form button {
+    margin: 10px 0;
+  }
+  .App .result .desktopResult {
+    display: none;
+  }
+  .App .result .mobileResult {
+    display: block;
+  }
+  .App .result .mobileResult .carousel-inner {
+    margin: 20px 0;
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+  .App .result .mobileResult .carousel-inner .carousel-item {
+    border: 2px solid #222559;
+    border-radius: 25px;
+    background-color: #6cd9d9;
+  }
+  .App .result h3 {
+    font-size: 16px;
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 907px) {
+  form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  form div {
+    margin: 20px 10px;
+  }
+  form div label {
+    margin: 0;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 1260px) {
+  .App .result p {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

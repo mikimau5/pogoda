@@ -1,0 +1,172 @@
+$primary-color: #6cd9d9;
+$secondary-color: #222559;
+$border: 2px solid $secondary-color;
+$border-radius: 25px;
+$primary-font-size: 20px;
+
+* {
+  margin: 0;
+  padding: 0;
+  body {
+    font-family: arial;
+    background-color: #609bbf;
+  }
+}
+
+.App {
+  form {
+    input,
+    button {
+      margin: 20px 10px 50px;
+      padding: 10px 20px;
+      border: $border;
+      border-radius: $border-radius;
+      background-color: $primary-color;
+      font-size: $primary-font-size;
+    }
+
+    button {
+      transition: 0.3s;
+      &:hover {
+        background-color: $secondary-color;
+        color: white;
+      }
+    }
+
+    div label {
+      font-size: $primary-font-size;
+    }
+  }
+  .result {
+    .mobileResult {
+      display: none;
+    }
+    h3 {
+      margin: 30px 0 30px 50px;
+      font-weight: normal;
+      font-size: 26px;
+    }
+    em {
+      font-weight: bold;
+    }
+    .icon {
+      text-align: center;
+      border: $border;
+      border-radius: $border-radius;
+      margin: 10px;
+    }
+    .forecast {
+      display: flex;
+      justify-content: center;
+      div {
+        flex-wrap: wrap;
+        margin: 20px 10px;
+        padding: 10px;
+        border: $border;
+        border-radius: $border-radius;
+        background-color: $primary-color;
+      }
+    }
+
+    h4 {
+      margin: 20px 0;
+      font-size: $primary-font-size;
+      font-weight: normal;
+    }
+
+    i {
+      font-size: $primary-font-size;
+      width: 50px;
+      text-align: center;
+      color: $secondary-color;
+    }
+    p {
+      display: inline-block;
+    }
+    strong {
+      color: $secondary-color;
+      margin-left: 5px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .result {
+    h4 {
+      margin: 10px 0;
+      strong {
+        font-size: 18px;
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .App {
+    .result {
+      p {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .App {
+    form {
+      text-align: center;
+      input {
+        margin-bottom: 0;
+        text-align: center;
+      }
+
+      button {
+        margin: 10px 0;
+      }
+    }
+
+    .result {
+      .desktopResult {
+        display: none;
+      }
+      .mobileResult {
+        display: block;
+        .carousel-inner {
+          margin: 20px 0;
+          padding-right: 10%;
+          padding-left: 10%;
+          .carousel-item {
+            border: $border;
+            border-radius: $border-radius;
+            background-color: $primary-color;
+          }
+        }
+      }
+      h3 {
+        font-size: 16px;
+        margin: 10px 0;
+        text-align: center;
+      }
+    }
+  }
+}
+@media (orientation: landscape) and (min-width: 907px) {
+  form {
+    display: flex;
+    div {
+      margin: 20px 10px;
+      label {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (orientation: landscape) and (max-width: 1260px) {
+  .App {
+    .result {
+      p {
+        display: none;
+      }
+    }
+  }
+}
